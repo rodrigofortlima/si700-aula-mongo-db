@@ -110,6 +110,8 @@ const options = {
 
 
 async function connectToMongoDB(){
+	console.log(password);
+	
     const client = await mongodb.MongoClient.connect(connectionString,options);
 
     const db = client.db('myFirstDatabase');
